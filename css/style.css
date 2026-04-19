@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f5;
+  color: #2e3630;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+nav {
+  background-color: #93a996;
+  padding: 15px 25px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #5d7561;
+  font-size: 36px;
+}
+
+h2 {
+  color: #5d7561;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+
+.hero {
+  background-color: #93a996;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 40px;
+  transition: transform 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.45);
+}
+
+.hero h1 {
+  color: white;
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+
+.hero p {
+  color: #dae8dc;
+  font-size: 20px;
+  max-width: 500px;
+  margin: 0 auto 25px auto;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: white;
+  color: #5d7561;
+  padding: 15px 28px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero a:hover {
+  background-color: #5d7561;
+  color: white;
+}
+
+
+.foto-profilo {
+  max-height: 320px;
+  max-width: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: opacity 0.3s;
+}
+
+.foto-profilo:hover {
+  opacity: 0.5;
+}
+
+
+ul {
+  line-height: 2;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.contatti {
+  background-color: #dcebe0;
+  padding: 20px;
+  border-left: 4px solid #93a996;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.contatti a {
+  color: #5d7561;
+  transition: color 0.2s;
+}
+
+.contatti a:hover {
+  color: #7b9480;
+}
+
+.titolo-testo {
+  text-align: center;
+}
+
+.intro-testo {
+  font-size: 18px;
+  text-align: center;
+}
+
+footer {
+  background-color: #93a996;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
